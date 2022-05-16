@@ -6,5 +6,6 @@ class AppIcons {
   String icHome = "assets/img/svg/home.svg";
   String icFavorite = "assets/img/svg/favorite.svg";
   String icProfile = "assets/img/svg/profile.svg";
-  
+  String icNotif = "assets/img/png/icNotif.png";
+  String icSearch = "assets/img/svg/IcSearch.svg";
 }
