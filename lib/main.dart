@@ -1,23 +1,37 @@
+import 'package:aion/core/components/nav_bar.dart';
+import 'package:aion/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:imtihon/screens/home_page/home_page.dart';
+import 'package:flutter/services.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
-      home: const HomePage(),
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+    return  MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter',
+        theme: appThemeData,
+        builder: (context, child) {
+          return ScrollConfiguration(
+            behavior: MyBehavior(),
+            child: child!,
+          );
+        },
+        home: const NavBar(),
     );
   }
 }
 
+class MyBehavior extends ScrollBehavior {
+  @override
+  ScrollPhysics getScrollPhysics(BuildContext context) =>
+      const ClampingScrollPhysics();
+}
