@@ -6,7 +6,7 @@ class AppColors {
   AppColors._inint();
 
   Color backGround = const Color(0xFFF5F5F5);
-  Color primarColor = const Color(0xFFFF5732);
+  Color primarColor = const Color(0xFFFF3A44);
   Color black = Colors.black;
   Color grey = const Color(0xFFE9E9E9);
   Color white = Colors.white;

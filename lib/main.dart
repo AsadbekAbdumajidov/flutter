@@ -1,7 +1,8 @@
 import 'package:aion/core/components/nav_bar.dart';
-import 'package:aion/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'core/theme/app_theme.dart';
 
 void main() async {
   runApp(const MyApp());

@@ -34,6 +34,8 @@ dependencies:
   slide_countdown: ^0.2.4
   # imgni cached qilish uchun
   cached_network_image: ^3.2.0
+  floating_navbar: ^2.0.2
+  floating_navigation_bar: ^0.0.5
 
 dev_dependencies:
   flutter_test:
@@ -44,17 +46,17 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/png/
-    - assets/svg/
+    - assets/img/png/
+    - assets/img/svg/
 
 
-  fonts:
-    - family: SFPro
-      fonts:
-        - asset: assets/fonts/SFPro.ttf
-    - family: Mer
-      fonts:
-        - asset: assets/fonts/merriweather.ttf
+  # fonts:
+  #   - family: SFPro
+  #     fonts:
+  #       - asset: assets/fonts/SFPro.ttf
+  #   - family: Mer
+  #     fonts:
+  #       - asset: assets/fonts/merriweather.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
