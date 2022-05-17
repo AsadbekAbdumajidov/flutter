@@ -5,7 +5,6 @@ import 'package:aion/core/constants/app_colors.dart';
 import 'package:aion/core/constants/app_icons.dart';
 import 'package:aion/core/utils/size_konfig.dart';
 import 'package:aion/views/tabs/home/_widget/page_view_item.dart';
-import 'package:aion/views/tabs/home/_widget/tab_bar_item.dart';
 import 'package:aion/views/tabs/home/_widget/tab_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

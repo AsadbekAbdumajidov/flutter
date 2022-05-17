@@ -1,3 +1,4 @@
+import 'package:aion/core/base/base_view.dart';
 import 'package:aion/core/constants/app_colors.dart';
 import 'package:aion/core/constants/app_icons.dart';
 import 'package:aion/core/utils/size_konfig.dart';
@@ -20,7 +21,10 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return BlocProvider(
+    return BaseView(
+        viewModal:const NavBar(),
+        onPageBuilder: (context, widget) {
+          return  BlocProvider(
       create: (context) => NavBarCubit(),
       child: BlocConsumer<NavBarCubit, NavBarState>(
         listener: (context, state) {},
@@ -29,6 +33,7 @@ class _NavBarState extends State<NavBar> {
         },
       ),
     );
+        });
   }
 
   Scaffold scaffold(BuildContext context) {

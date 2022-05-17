@@ -4,12 +4,5 @@ class AppButtonStyle {
   static AppButtonStyle get instance => _instance;
   AppButtonStyle._inint();
 
-  // ButtonStyle buttonStyleBorder8ColorPrimary = OutlinedButton.styleFrom(
-  //   fixedSize: Size(wi(147), he(42)),padding: const EdgeInsets.all(0),
-  //   backgroundColor: AppColors.instance.primarColor,
-  //   elevation: 0,
-  //   shape: const RoundedRectangleBorder(
-  //     borderRadius: BorderRadius.all(Radius.circular(8)),
-  //   ),
-  // );
+  
 }

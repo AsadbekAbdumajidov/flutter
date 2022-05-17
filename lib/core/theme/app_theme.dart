@@ -19,7 +19,6 @@ final appThemeData = ThemeData(
     ),
     centerTitle: true,
   ),
-  fontFamily: 'SFPro',
   // Bottom Nav Bar
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     backgroundColor: AppColors.instance.backGround,
